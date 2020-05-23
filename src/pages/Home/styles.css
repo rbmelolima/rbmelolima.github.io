@@ -1,0 +1,53 @@
+html,
+body {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+body {
+  position: relative;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
+  size: 24px;
+}
+
+main {
+  max-width: 100vh;
+}
+
+.icons-group {
+  margin-top: 24px;
+  max-width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.apresentation {
+  max-width: 400px;
+  max-height: 450px;
+  margin-top: 180px;
+}
+
+.img-container {
+  position: fixed;
+  bottom: -10px;
+  right: -3%;
+}
+
+.img-container img {
+  width: 110%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .apresentation {
+    margin-top: 80px;
+  }
+}
+

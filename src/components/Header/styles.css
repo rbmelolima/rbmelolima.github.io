@@ -1,0 +1,45 @@
+header {
+  font-size: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-group-links {
+  text-align: center;
+  display: none;
+}
+
+.menu-group-links .menu-link {
+  margin-left: 32px;
+}
+
+.menu-link {
+  transition: all 1s linear;
+}
+
+.menu-link .active,
+.menu-link:hover {
+  color: #0f4c81;
+}
+
+.menu-button{
+  display: block;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .menu-button{
+    display: none;
+  }
+
+  .menu-group-links {
+    display: block;
+  }
+}
