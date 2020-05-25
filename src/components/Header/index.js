@@ -15,8 +15,8 @@ export default function Header() {
 
         <div className="menu-group-links">
           <Link to='/' className="menu-link">Início</Link>
-          <Link to='/' className="menu-link">Sobre</Link>
-          <Link to='/' className="menu-link">Projetos</Link>
+          <Link to='/about' className="menu-link">Sobre</Link>
+          <Link to='/projects' className="menu-link">Projetos</Link>
         </div>
 
         <div className="menu-button">

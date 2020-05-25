@@ -21,21 +21,22 @@ nav {
 }
 
 .menu-link {
-  transition: all 1s linear;
+  transition: all ease 0.5s;
+  opacity: 0.9;
 }
 
-.menu-link .active,
+.menu-link.active,
 .menu-link:hover {
   color: #0f4c81;
+  opacity: 1;
 }
 
-.menu-button{
+.menu-button {
   display: block;
 }
 
-
 @media only screen and (min-width: 768px) {
-  .menu-button{
+  .menu-button {
     display: none;
   }
 
