@@ -2,8 +2,13 @@ body {
   position: relative;
 }
 
+.home {
+  height: 100vh;
+}
+
 .home h1 {
   font-weight: 500;
+  font-size: 36px;
 }
 
 .home p {
@@ -11,40 +16,39 @@ body {
   size: 24px;
 }
 
-.home .icons-group {
+.home {
+  display: grid;
+  gap: 16px;
+}
+
+@media screen and (min-width: 1023px) {
+  .home {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .apresentation-container .apresentation {
+    margin: 0;
+  }
+}
+
+.apresentation-container,
+.img-container {
+  display: flex;
+  align-items: center;
+}
+
+.apresentation-container .apresentation {
+  height: 300px;
+  max-width: 400px;
+}
+
+.img-container img {
+  max-width: 100%;
+}
+
+.apresentation-container .icons-group {
   margin-top: 24px;
   max-width: 130px;
   display: flex;
   justify-content: space-between;
-}
-
-.home .apresentation {
-  max-width: 400px;
-  max-height: 450px;
-  margin-top: 180px;
-}
-
-.home .img-container {
-  position: fixed;
-  bottom: -10px;
-  right: -3%;
-}
-
-.home .img-container img {
-  width: 110%;
-  height: auto;
-}
-
-@media only screen and (max-width: 600px) {  
-  .home .apresentation {
-    margin: 0;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-height: 630px) {
-  .home .img-container img {
-    width: 350px;
-    height: auto;
-  }
 }

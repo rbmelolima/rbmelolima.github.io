@@ -64,7 +64,7 @@ export default function Projects() {
             title={'Tic Tac Toe'}
             description={'Jogo da velha utilizando javascript. Pode ser jogado com 2 jogadores locais ou sozinho contra o computador.'}
             tech1={'Javascript'}
-            tech2={'SASS'}
+            tech2={'Sass'}
           >
           </ProjectComponent>
 
@@ -81,7 +81,7 @@ export default function Projects() {
             title={'unPass'}
             description={'O unPass foi criado com a intenção de gerar senhas aleatórias para que o usuário utilize em suas aplicações. O seu diferencial é criar senhas também fáceis de serem lembradas por seres humanos, afinal "enguia845Jambo" é uma senha extremamente forte e facilmente lembrável.'}
             tech1={'Javascript'}
-            tech2={'SASS'}
+            tech2={'Sass'}
           >
           </ProjectComponent>
           <ProjectComponent

@@ -1,10 +1,10 @@
-h1 {
+.projects-main h1 {
   margin-top: 64px;
   margin-bottom: 32px;
   color: #0f4c81;
 }
 
-main {
+.projects-main {
   padding-bottom: 64px;
 }
 
