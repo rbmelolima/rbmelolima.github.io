@@ -13,7 +13,6 @@ nav {
 
 .menu-group-links {
   text-align: center;
-  display: none;
 }
 
 .menu-group-links .menu-link {
@@ -29,18 +28,4 @@ nav {
 .menu-link:hover {
   color: #0f4c81;
   opacity: 1;
-}
-
-.menu-button {
-  display: block;
-}
-
-@media only screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-
-  .menu-group-links {
-    display: block;
-  }
 }

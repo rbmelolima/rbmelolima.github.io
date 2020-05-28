@@ -9,16 +9,7 @@ export default function ProjectComponent(props) {
         <h3>{props.title}</h3>
         <p>
           {props.description}
-        </p>
-        <div className="badges">
-          <div className="tech">
-            <p>{props.tech1}</p>
-          </div>
-
-          <div className="tech">
-            <p>{props.tech2}</p>
-          </div>
-        </div>
+        </p>      
       </div>
     </a>
   );

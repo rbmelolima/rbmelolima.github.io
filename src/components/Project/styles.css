@@ -3,20 +3,16 @@
   box-sizing: border-box;
   padding: 16px 24px;
   background-color: #fff;
-  height: 350px;
+  height: 300px;
   width: 100%;
   border-radius: 16px;
-  /* -webkit-box-shadow: 0px 0px 4px 0px rgba(33, 33, 33, 0.2);
-  -moz-box-shadow: 0px 0px 4px 0px rgba(33, 33, 33, 0.2);
-  box-shadow: 0px 0px 4px 0px rgba(33, 33, 33, 0.2); */
   transition: all 0.3s linear;
 }
 
-.project:hover{
-  transform: scale(1.04);  
+.project:hover {
+  transform: scale(1.02);
+  background-color: rgba(7, 178, 217, 0.03);
 }
-
-
 
 @media screen and (max-width: 600px) {
   .project {
@@ -34,26 +30,5 @@
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 16px;
-}
-
-.badges {
-  position: absolute;
-  bottom: 16px;
-  display: flex;
-  margin-top: 16px;
-}
-
-.tech {
-  border: 1px solid #0f4c81;
-  border-radius: 25px;
-  padding: 2px 4px;
-  min-width: 80px;
-  text-align: center;
-  margin-right: 8px;
-}
-
-.tech p {
-  font-size: 14px;
-  font-weight: 400;
-  color: #0f4c81;
+  font-weight: 500;
 }
