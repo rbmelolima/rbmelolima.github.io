@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 16px 24px;
   background-color: #fff;
-  height: 300px;
+  height: 350px;
   width: 100%;
   border-radius: 16px;
   transition: all 0.3s linear;
@@ -29,6 +29,6 @@
 
 .project h3 {
   font-size: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-weight: 500;
 }

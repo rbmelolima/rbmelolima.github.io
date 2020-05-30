@@ -21,15 +21,15 @@ export default function Home() {
             <p>Analista de sistemas, técnico de informática e desenvolvedor fullstack, trabalhando com javascript e flutter no dia a dia</p>
 
             <div className="icons-group">
-              <a href="https://github.com/rbmelolima" target="blank">
+              <a href="https://github.com/rbmelolima" target="blank" title="Link para o github">
                 <FaGithub size="24" color="212121"></FaGithub>
               </a>
 
-              <a href="https://www.linkedin.com/in/rbmelolima/" target="blank">
+              <a href="https://www.linkedin.com/in/rbmelolima/" target="blank" title="Link para o linkedin">
                 <FaLinkedin size="24" color="0e76a8"></FaLinkedin>
               </a>
 
-              <a href="mailto:rbmelolima@gmail.com" target="blank">
+              <a href="mailto:rbmelolima@gmail.com" target="blank" title="Link para o email">
                 <FcGoogle size="24"></FcGoogle>
               </a>
             </div>

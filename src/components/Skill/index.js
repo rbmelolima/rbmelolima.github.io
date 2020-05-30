@@ -5,7 +5,10 @@ import './styles.css'
 export default function Skill(props) {
   return (
     <div className="skill">
-      <img src={props.img} alt={props.alt}/>
+      <div className="skill-content">
+        <img src={props.img} alt={props.legend} />
+        <h4>{props.legend}</h4>
+      </div>
     </div>
   )
 }

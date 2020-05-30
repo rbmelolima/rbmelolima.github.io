@@ -12,7 +12,7 @@ export default function Projects() {
       <Header></Header>
       <main className="projects-main">
         <h1>Projetos</h1>
-        <p>Cada projeto está devidamente documentado no github, clique e confira!</p>
+        <p>Cada projeto está devidamente documentado no github, clique e vá até o repositório do projeto!</p>
 
         <section className="projects-container">
           <ProjectComponent
@@ -32,7 +32,7 @@ export default function Projects() {
           <ProjectComponent
             url={'https://github.com/rbmelolima/Be_the_hero'}
             title={'Be the hero'}
-            description={'O objetivo do Be the Hero é conectar pessoas que querem ajudar com ONGS que querem ser ajudadas. Para tanto, as ongs lançam os casos que precisam ser ajudados por outras pessoas no web e o aplicativo mobile consome esses dados, conectando as pessoas às ONGS.'}
+            description={'Be the Hero conecta pessoas que querem ajudar com ONGS que querem ser ajudadas. Para tanto, as ongs lançam os casos que precisam ser ajudados por outras pessoas na web e o aplicativo mobile consome esses dados, conectando as pessoas às ONGS.'}
           >
           </ProjectComponent>
 
@@ -66,7 +66,7 @@ export default function Projects() {
           <ProjectComponent
             url={'https://github.com/rbmelolima/unPass'}
             title={'unPass'}
-            description={'O unPass foi criado com a intenção de gerar senhas aleatórias para que o usuário utilize em suas aplicações. O seu diferencial é criar senhas também fáceis de serem lembradas por seres humanos, afinal "enguia845Jambo" é uma senha extremamente forte e facilmente lembrável.'}
+            description={'O unPass foi criado com a intenção de gerar senhas aleatórias para que o usuário utilize em suas aplicações. O seu diferencial é criar senhas também fáceis de serem lembradas por seres humanos.'}
 
           >
           </ProjectComponent>
