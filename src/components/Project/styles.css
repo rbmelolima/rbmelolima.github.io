@@ -22,12 +22,12 @@
 }
 
 .project p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
+  color: #212121;
 }
 
 .project h3 {
-  font-weight: 400;
   font-size: 24px;
   margin-bottom: 16px;
   font-weight: 500;

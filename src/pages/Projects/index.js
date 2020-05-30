@@ -12,6 +12,7 @@ export default function Projects() {
       <Header></Header>
       <main className="projects-main">
         <h1>Projetos</h1>
+        <p>Cada projeto está devidamente documentado no github, clique e confira!</p>
 
         <section className="projects-container">
           <ProjectComponent
