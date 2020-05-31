@@ -43,15 +43,15 @@ export default function About() {
               Entusiasta da tecnologia, curioso por descobrir novas ferramentas e como resolver problemas de maneira criativa. Caso queira ver meus projetos ou me contatar, deixo minhas redes sociais abaixo.
             </p>
             <div className="icons-group">
-              <a href="https://github.com/rbmelolima" target="blank" title="Link para o github">
+              <a href="https://github.com/rbmelolima" target="blank" title="Visualizar github">
                 <FaGithub size="24" color="212121"></FaGithub>
               </a>
 
-              <a href="https://www.linkedin.com/in/rbmelolima/" target="blank" title="Link para o linkedin">
+              <a href="https://www.linkedin.com/in/rbmelolima/" target="blank" title="Visualizar linkedin">
                 <FaLinkedin size="24" color="0e76a8"></FaLinkedin>
               </a>
 
-              <a href="mailto:rbmelolima@gmail.com" target="blank" title="Link para o email">
+              <a href="mailto:rbmelolima@gmail.com" target="blank" title="Visualizar email">
                 <FcGoogle size="24" color="0f4c81"></FcGoogle>
               </a>
 
