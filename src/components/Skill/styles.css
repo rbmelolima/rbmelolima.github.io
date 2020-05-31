@@ -1,17 +1,25 @@
+.skill-content{
+  display: block;
+}
+
 .skill {
   background-color: #fff;
   border-radius: 16px;
-  height: 220px;
-  width: 220px;
-  margin-bottom: 16px;
-  margin-right: 16px;
-  
+
+  height: 200px;
+  width: 200px;
+
+
+  margin: 0px 16px 16px 0px;
+    
   display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: column;
 
   text-align: center;
+
+  transition: all 1s linear;
 }
 
 .skill img {
@@ -20,20 +28,17 @@
   margin-bottom: 8px;
 }
 
-.skill-content{
-  display: block;
-}
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 850px) {
   .skill {
     height: 166px;
-    width: 166px;
-    flex-grow: 1;
+    width: 166px;    
   }
 
   .skill img {
-    width: 80px;
-    height: auto;
+    max-width: 80px;
+    max-height: 100px;
   }
 }
 
@@ -44,7 +49,7 @@
   }
 
   .skill img {
-    width: 60px;
-    height: auto;
+    max-width: 60px;
+    max-height: 60px;
   }
 }
