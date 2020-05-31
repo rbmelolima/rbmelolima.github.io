@@ -38,7 +38,8 @@ body {
 }
 
 .apresentation-container .apresentation {
-  height: 300px;
+  height: auto;
+  padding: 50px 0;
   max-width: 400px;
 }
 
@@ -52,3 +53,5 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+
