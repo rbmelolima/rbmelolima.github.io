@@ -28,7 +28,9 @@
   margin-bottom: 8px;
 }
 
-
+.skill h4{
+  color: #212121;
+}
 
 @media screen and (max-width: 850px) {
   .skill {
