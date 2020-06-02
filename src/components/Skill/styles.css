@@ -1,17 +1,16 @@
-.skill-content{
+.skill-content {
   display: block;
 }
 
 .skill {
   background-color: #fff;
-  border-radius: 16px;
+  border-radius: 8px;
 
   height: 200px;
   width: 200px;
 
+  margin: 0px 8px 8px 0px;
 
-  margin: 0px 16px 16px 0px;
-    
   display: flex;
   justify-content: center;
   align-content: center;
@@ -19,7 +18,7 @@
 
   text-align: center;
 
-  transition: all 1s linear;
+  transition: all 0.3s linear;
 }
 
 .skill img {
@@ -28,14 +27,14 @@
   margin-bottom: 8px;
 }
 
-.skill h4{
-  color: #212121;
+.skill h4 {
+  color: #454545;
 }
 
 @media screen and (max-width: 850px) {
   .skill {
     height: 166px;
-    width: 166px;    
+    width: 166px;
   }
 
   .skill img {
@@ -44,14 +43,22 @@
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 768px) {
   .skill {
-    height: 120px;
-    width: 120px;
+    height: 110px;
+    width: 110px;
   }
 
   .skill img {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .skill {
+    height: 120px;
+    width: 120px;
+    flex-grow: 1;
   }
 }
