@@ -27,8 +27,9 @@
   margin-bottom: 8px;
 }
 
-.skill h4 {
+.skill legend {
   color: #454545;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 850px) {

@@ -7,7 +7,7 @@ export default function Skill(props) {
     <div className="skill">
       <div className="skill-content">
         <img src={props.img} alt={props.legend} />
-        <h4>{props.legend}</h4>
+        <legend>{props.legend}</legend>
       </div>
     </div>
   )

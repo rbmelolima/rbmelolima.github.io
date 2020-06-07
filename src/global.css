@@ -10,6 +10,17 @@ h6 {
   color: #0f4c81;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em {
+  font-family: "Roboto Slab", serif;
+}
+
 header,
 main,
 footer {
@@ -22,7 +33,7 @@ footer {
 @media only screen and (min-width: 768px) {
   header,
   main,
-  footer {  
+  footer {
     padding-left: 70px;
     padding-right: 70px;
   }
