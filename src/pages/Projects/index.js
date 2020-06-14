@@ -16,6 +16,29 @@ export default function Projects() {
 
         <section className="projects-container">
           <ProjectComponent
+            url={'https://github.com/rbmelolima/Orbit'}
+            title={'Orbit'}
+            description={'Orbit é um aplicativo mobile feito em Flutter para fornecer, todos os dias, imagens diferentes sobre o universo. Para tanto, usa-se a API da NASA chamada Astronomy Picture of the Day (APOD).'}
+          >
+          </ProjectComponent>
+
+          <ProjectComponent
+            url={'https://github.com/rbmelolima/unPass'}
+            title={'unPass'}
+            description={'O unPass foi criado com a intenção de gerar senhas aleatórias para que o usuário utilize em suas aplicações. O seu diferencial é criar senhas também fáceis de serem lembradas por seres humanos.'}
+
+          >
+          </ProjectComponent>
+
+          <ProjectComponent
+            url={'https://github.com/rbmelolima/Ecoleta'}
+            title={'Ecoleta'}
+            description={'Tem como objetivo aproximar às empresas de coleta de material reciclável para com as pessoas que precisam descartar esses itens, tornando assim um mundo ecologicamente sustentável.'}
+
+          >
+          </ProjectComponent>
+
+          <ProjectComponent
             url={'https://github.com/rbmelolima/Bin2Dec'}
             title={'Bin2Dec'}
             description={'Conversor e calculadora de bases numéricas quaisquer.'}
@@ -57,19 +80,7 @@ export default function Projects() {
           >
           </ProjectComponent>
 
-          <ProjectComponent
-            url={'https://github.com/rbmelolima/Orbit'}
-            title={'Orbit'}
-            description={'Orbit é um aplicativo mobile feito em Flutter para fornecer, todos os dias, imagens diferentes sobre o universo. Para tanto, usa-se a API da NASA chamada Astronomy Picture of the Day (APOD).'}
-          >
-          </ProjectComponent>
-          <ProjectComponent
-            url={'https://github.com/rbmelolima/unPass'}
-            title={'unPass'}
-            description={'O unPass foi criado com a intenção de gerar senhas aleatórias para que o usuário utilize em suas aplicações. O seu diferencial é criar senhas também fáceis de serem lembradas por seres humanos.'}
 
-          >
-          </ProjectComponent>
           <ProjectComponent
             url={'https://github.com/rbmelolima/OBI'}
             title={'OBI'}
