@@ -34,7 +34,6 @@ export default function Projects() {
             url={'https://github.com/rbmelolima/Ecoleta'}
             title={'Ecoleta'}
             description={'Tem como objetivo aproximar às empresas de coleta de material reciclável para com as pessoas que precisam descartar esses itens, tornando assim um mundo ecologicamente sustentável.'}
-
           >
           </ProjectComponent>
 
