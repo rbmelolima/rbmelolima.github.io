@@ -44,7 +44,8 @@ body {
 }
 
 .img-container img {
-  max-width: 100%;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .apresentation-container .icons-group {

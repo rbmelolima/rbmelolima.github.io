@@ -6,12 +6,12 @@
   height: 350px;
   width: 100%;
   border-radius: 16px;
-  transition: all 0.3s linear;
+  transition: all 0.5s linear;
+  border: 2px solid transparent;
 }
 
 .project:hover {
-  transform: scale(1.02);
-  background-color: rgba(7, 178, 217, 0.03);
+  border: 2px solid #0f4c81;
 }
 
 @media screen and (max-width: 600px) {

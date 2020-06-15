@@ -9,7 +9,6 @@ import Header from '../../components/Header';
 import computer from '../../assets/icons/computer.svg'
 
 
-
 export default function Home() {
   return (
     <>
@@ -17,7 +16,7 @@ export default function Home() {
       <main className="home">
         <div className="apresentation-container">
           <div className="apresentation">
-            <h1>Olá! <br/>Sou Roger Bernardo de Melo Lima.</h1>
+            <h1>Olá! <br />Sou Roger Bernardo de Melo Lima.</h1>
             <p>Analista de sistemas, técnico de informática e desenvolvedor fullstack, trabalhando com javascript e flutter no dia a dia.</p>
 
             <div className="icons-group">
