@@ -9,16 +9,22 @@ import './styles.css'
 export default function Projects() {
   return (
     <>
-      <Header/>
+      <Header />
       <main className="projects-main">
         <h1>Projetos</h1>
         <p>Cada projeto está devidamente documentado no github, clique e vá até o repositório do projeto!</p>
 
         <section className="projects-container">
           <Project
+            url={'https://github.com/rbmelolima/CleanNodeAPI'}
+            title={'Clean Node API'}
+            description={'API feita para o gerenciamento de enquetes.'}
+          />
+
+          <Project
             url={'https://github.com/rbmelolima/gerador-link-whatsapp'}
             title={'Gerador de link para Whatsapp'}
-            description={'Crie links para contatar seu contato no aplicativo Whatsapp rapidamente.'}
+            description={'Crie links que possam lhe contactar rapidamente no aplicativo Whatsapp.'}
           />
 
           <Project
@@ -95,7 +101,7 @@ export default function Projects() {
         </section>
 
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
