@@ -2,7 +2,7 @@ import React from 'react'
 
 import './styles.css'
 
-export default function ProjectComponent(props) {
+export default function Project(props) {
   return (
     <a href={props.url} target="blank">
       <div className="project">
