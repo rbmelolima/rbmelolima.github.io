@@ -33,7 +33,7 @@
 }
 
 .experience .img-container {
-  width: 30%;
+  width: auto;
   min-width: 250px;
   display: flex;
   justify-content: center;
@@ -41,6 +41,7 @@
 
 .experience .details-container {
   width: 70%;
+  padding-left: 32px;
 }
 
 @media screen and (max-width: 1014px){
@@ -53,5 +54,6 @@
   
   .experience .details-container {
     width: 100%;
+    padding-left: 0;
   }
 }
