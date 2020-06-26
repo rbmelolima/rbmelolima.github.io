@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaWhatsapp, FaMediumM } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 
 import Header from '../../components/Header'
@@ -53,6 +53,10 @@ export default function About() {
 
               <a href="mailto:rbmelolima@gmail.com" target="blank" title="Visualizar email">
                 <FcGoogle size="24" color="0f4c81"></FcGoogle>
+              </a>
+
+              <a href="https://medium.com/@rbmelolima" target="blank" title="Visualizar Medium">
+                <FaMediumM size="24"></FaMediumM>
               </a>
 
               <a

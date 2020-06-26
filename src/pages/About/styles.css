@@ -2,7 +2,7 @@
   font-size: 32px;
 }
 
-.about-main section{
+.about-main section {
   margin-bottom: 72px;
 }
 
@@ -31,18 +31,19 @@
 }
 
 .profile-container .profile .icons-group {
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .profile-container .profile .icons-group a {
-  margin-left: 8px;
-  margin-right: 8px;
+  margin: 0 8px;
 }
 
 .skills-container .skills {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 .skills-container p {

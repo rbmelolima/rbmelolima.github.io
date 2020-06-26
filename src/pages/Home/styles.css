@@ -50,7 +50,7 @@ body {
 
 .apresentation-container .icons-group {
   margin-top: 24px;
-  max-width: 130px;
+  width: 200px;
   display: flex;
   justify-content: space-between;
 }
