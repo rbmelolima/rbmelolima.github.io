@@ -40,8 +40,8 @@
 }
 
 .experience .details-container {
-  width: 70%;
   padding-left: 32px;
+  width: 70%;  
 }
 
 @media screen and (max-width: 1014px){
