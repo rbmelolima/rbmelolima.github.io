@@ -1,0 +1,10 @@
+#projects {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+#projects h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}

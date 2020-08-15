@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #ef233c;
+  --color-background: #1e1e24;
+  --color-background-cards: #f6f6f6;
+}
+
+body {
+  background-color: var(--color-background);
+  padding: 32px;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em {
+  font-family: "Roboto Slab", serif;
+}
+
+p,
+a,
+span {
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+button {
+  cursor: pointer;
+}
