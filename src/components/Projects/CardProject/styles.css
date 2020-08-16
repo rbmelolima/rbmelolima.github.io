@@ -10,7 +10,7 @@
 .card-project .more-info {
   display: flex;
   align-items: center;
-  padding: 0;  
+  padding: 0;
   margin-top: 16px;
 }
 
@@ -31,7 +31,7 @@
 .card-project .more-info span {
   margin-left: 24px;
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
 .card-project .more-info span svg {
@@ -42,6 +42,6 @@
   margin-left: 24px;
 }
 
-.card-project h4{
+.card-project h4 {
   font-size: 20px;
 }

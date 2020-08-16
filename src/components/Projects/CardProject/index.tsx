@@ -10,6 +10,20 @@ interface CardProjectProps {
 export default function CardProject(props: CardProjectProps) {
   const { description, homepage, html_url, language, name } = props.data;
 
+  function renderHomepageLink() {
+    if(homepage !== '' && homepage !== null) {
+      return (
+        <a href={ homepage } target="_blank" rel="noopener noreferrer">
+          <FaLink size={ 24 } />
+        </a>
+      );
+    }
+
+    else {
+      return <></>;
+    }
+  }
+
   return (
     <article className="card-project">
       <h4>{ name }</h4>
@@ -21,13 +35,7 @@ export default function CardProject(props: CardProjectProps) {
         </a>
 
         {
-          homepage !== ''
-            ? (
-              <a href={ homepage } target="_blank" rel="noopener noreferrer">
-                <FaLink size={ 24 } />
-              </a>
-            )
-            : <></>
+          renderHomepageLink()
         }
 
         <span>
@@ -35,6 +43,6 @@ export default function CardProject(props: CardProjectProps) {
           { language }
         </span>
       </div>
-    </article>
+    </article >
   );
 }

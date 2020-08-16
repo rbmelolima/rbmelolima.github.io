@@ -10,7 +10,7 @@ export default function Projects() {
   useEffect(() => {
     async function getData() {
       try {
-        const response = await githubAPI.get<Array<IRepo>>('users/rbmelolima/repos');
+        const response = await githubAPI.get<Array<IRepo>>('users/rbmelolima/repos?per_page=100');
         const { data } = response;
         setrepos(data);
 
