@@ -1,0 +1,17 @@
+.group-cardSocialMedia {
+  width: 100%;
+  margin-top: 64px;
+  display: block;
+  gap: 16px;
+}
+
+@media screen and (min-width: 576px) {
+  .group-cardSocialMedia {
+    width: 100%;
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+}
+

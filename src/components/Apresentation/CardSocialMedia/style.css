@@ -1,0 +1,50 @@
+.cardSocialMedia {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+.cardSocialMedia span {
+  display: block;
+}
+
+.cardSocialMedia svg {
+  width: 36px;
+  height: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .cardSocialMedia {
+    margin-bottom: 0;
+  }
+}
+
+.group-cardSocialMedia .cardSocialMedia:nth-child(1) {
+  background: linear-gradient(277.09deg, #313545 15.4%, #121118 100.07%);
+}
+.group-cardSocialMedia .cardSocialMedia:nth-child(2) {
+  background: linear-gradient(135deg, #e25544 2.88%, #42127e 98.14%);
+}
+.group-cardSocialMedia .cardSocialMedia:nth-child(3) {
+  background: linear-gradient(135deg, #172368 2.88%, #e249af 100%);
+}
+.group-cardSocialMedia .cardSocialMedia:nth-child(4) {
+  background: linear-gradient(226.42deg, #3a0e41 8.93%, #09152f 110.98%);
+}
+.group-cardSocialMedia .cardSocialMedia:nth-child(5) {
+  background: linear-gradient(226.42deg, #1b4963 8.93%, #09152f 110.98%);
+}
+.group-cardSocialMedia .cardSocialMedia:nth-child(6) {
+  background: linear-gradient(135deg, #bd344b 2.88%, #082440 100%);
+}
+.group-cardSocialMedia .cardSocialMedia:nth-child(7) {
+  background: linear-gradient(226.42deg, #0f5f4b 8.93%, #09152f 110.98%);
+}
+.group-cardSocialMedia .cardSocialMedia:nth-child(8) {
+  background: linear-gradient(315deg, #21bdb8 0%, #280684 100%);
+}

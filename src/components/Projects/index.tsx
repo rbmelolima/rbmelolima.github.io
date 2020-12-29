@@ -3,6 +3,7 @@ import { IRepo } from '../../entity/github';
 import CardProject from './CardProject';
 import { githubController } from '../../entity/github';
 import { ErrorBoundary } from '../ErrorBoundary';
+import './styles.css';
 
 export default function Projects () {
   const [ repos, setrepos ] = useState<Array<IRepo>>();

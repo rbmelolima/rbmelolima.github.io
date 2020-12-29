@@ -5,7 +5,7 @@ import Header from '../../components/Header';
 import Apresentation from '../../components/Apresentation';
 import Projects from '../../components/Projects';
 
-export default function Home() {
+export default function Home () {
   return (
     <main id="page-home">
       <Header />

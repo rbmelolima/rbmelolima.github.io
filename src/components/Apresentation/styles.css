@@ -6,6 +6,7 @@
 }
 
 #apresentation .content {
+  width: 100%;
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -27,34 +28,4 @@
 #apresentation .content p {
   font-size: 16px;
   margin-top: 8px;
-}
-
-#apresentation .content svg {
-  color: #fff;
-}
-
-#apresentation .content .icons-group {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-#apresentation .content .icons-group a {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-#apresentation .content .icons-group svg {
-  transition: 0.4s ease-in-out all;
-}
-
-#apresentation .content .icons-group svg:hover {
-  color: var(--color-primary);
-}
-
-#apresentation .content .icons-group a:first-child {
-  margin-left: 0;
-}
-
-#apresentation .content .icons-group a:last-child {
-  margin-right: 0;
 }

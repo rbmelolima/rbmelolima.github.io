@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { IUser } from '../../entity/github/interfaces/IUser';
-import { FaGithub, FaLinkedin, FaMediumM, FaGoogle, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMediumM, FaGoogle, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import { githubController } from '../../entity/github';
 import { ErrorBoundary } from '../ErrorBoundary';
+import { CardSocialMedia } from './CardSocialMedia';
+import { GroupCardSocialMedia } from './GroupCardSocialMedia';
 
 import './styles.css';
 
@@ -26,47 +28,65 @@ export default function Apresentation (): JSX.Element {
   return (
     <section id="apresentation">
       <div className="content">
-        <ErrorBoundary error={ error }>
+        { <ErrorBoundary error={ error }>
           <img
             src={ user?.avatar_url }
             alt="Foto - Roger Bernardo de Melo Lima"
           />
         </ErrorBoundary>
-
+        }
         <h1>Roger Bernardo de Melo Lima</h1>
 
-        <ErrorBoundary error={ error }>
+        { <ErrorBoundary error={ error }>
           <p>{ user?.location }</p>
           <p>{ `@${user?.login}` }</p>
-        </ErrorBoundary>
+        </ErrorBoundary> }
 
-        <div className="contato icons-group">
-          <a href="https://github.com/rbmelolima" target="blank" title="Visualizar Github">
-            <FaGithub size="24" />
-          </a>
+        <div className="contato">
+          <GroupCardSocialMedia>
+            <CardSocialMedia url="https://github.com/rbmelolima">
+              <div>
+                <FaGithub size="24" />
+                <span>Github</span>
+              </div>
+            </CardSocialMedia>
 
-          <a href="https://www.linkedin.com/in/rbmelolima/" target="blank" title="Visualizar Linkedin">
-            <FaLinkedin size="24" />
-          </a>
+            <CardSocialMedia url="https://www.linkedin.com/in/rbmelolima/">
+              <div>
+                <FaLinkedin size="24" />
+                <span>Linkedin</span>
+              </div>
+            </CardSocialMedia>
 
-          <a href="mailto:rbmelolima@gmail.com" target="blank" title="Visualizar Email">
-            <FaGoogle size="24" />
-          </a>
+            <CardSocialMedia url="mailto:rbmelolima@gmail.com">
+              <div>
+                <FaGoogle size="24" />
+                <span>Gmail</span>
+              </div>
+            </CardSocialMedia>
 
-          <a href="https://medium.com/@rbmelolima" target="blank" title="Visualizar Medium">
-            <FaMediumM size="24" />
-          </a>
-          <a
-            href="https://api.whatsapp.com/send?phone=5513988282873"
-            target="blank"
-            title="Contato via whatsapp">
-            <FaWhatsapp size="24" />
-          </a>
+            <CardSocialMedia url="https://medium.com/@rbmelolima">
+              <div>
+                <FaMediumM size="24" />
+                <span>Medium</span>
+              </div>
+            </CardSocialMedia>
+
+            <CardSocialMedia url="https://api.whatsapp.com/send?phone=5513988282873">
+              <div>
+                <FaWhatsapp size="24" />
+                <span>Whatsapp</span>
+              </div>
+            </CardSocialMedia>
+            <CardSocialMedia url="https://www.instagram.com/rbmelolima/">
+              <div>
+                <FaInstagram size="24" />
+                <span>Instagram</span>
+              </div>
+            </CardSocialMedia>
+          </GroupCardSocialMedia>
+
         </div>
-
-        <ErrorBoundary error={ error }>
-          <p>{ user?.bio }</p>
-        </ErrorBoundary>
       </div>
     </section>
   );
