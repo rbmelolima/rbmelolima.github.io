@@ -2,7 +2,7 @@ import { githubAPI } from './github_api';
 import { IRepo, IUser } from './interfaces';
 
 class GithubController {
-  async getRepositories ({ username = 'rbmelolima' }): Promise<IRepo[]> {
+  async getRepositories (username = 'rbmelolima'): Promise<IRepo[]> {
     try {
       const response = await githubAPI.get<Array<IRepo>>(`users/${username}/repos?per_page=100`);
       const { data } = response;
@@ -13,7 +13,7 @@ class GithubController {
     }
   }
 
-  async profile ({ username = 'rbmelolima' }) {
+  async profile (username = 'rbmelolima') {
     try {
       const response = await githubAPI.get<IUser>(`users/${username}`);
       const { data } = response;
