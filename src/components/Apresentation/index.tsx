@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import IUser from '../../models/IUser';
+import { IUser } from '../../models/IUser';
 import githubAPI from '../../services/githubAPI';
 import { FaGithub, FaLinkedin, FaMediumM, FaGoogle, FaWhatsapp } from 'react-icons/fa';
 import './styles.css';
 
-export default function Apresentation(): JSX.Element {
+export default function Apresentation (): JSX.Element {
   const [ user, setuser ] = useState<IUser>();
 
   useEffect(() => {
-    async function getData() {
+    async function getData () {
       try {
         const response = await githubAPI.get<IUser>('users/rbmelolima');
         const { data } = response;
         setuser(data);
 
-      } catch(error) {
+      } catch (error) {
         //Tratar o erro
       }
     }
@@ -29,7 +29,7 @@ export default function Apresentation(): JSX.Element {
 
         <h1>Roger Bernardo de Melo Lima</h1>
         <p>{ user?.location }</p>
-        <p>{ `@${ user?.login }` }</p>
+        <p>{ `@${user?.login}` }</p>
 
         <div className="contato icons-group">
           <a href="https://github.com/rbmelolima" target="blank" title="Visualizar Github">

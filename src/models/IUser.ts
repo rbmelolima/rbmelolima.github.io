@@ -1,4 +1,4 @@
-interface IUser {
+export interface IUser {
   login: string;
   id: number,
   node_id: string;
@@ -32,5 +32,3 @@ interface IUser {
   created_at: string;
   updated_at: string;
 }
-
-export default IUser;
