@@ -9,6 +9,7 @@ class GithubController {
       return data;
     }
     catch (error) {
+      console.error({ error });
       throw new Error('Erro ao buscar os repositórios');
     }
   }
@@ -20,7 +21,8 @@ class GithubController {
       return data;
 
     } catch (error) {
-      throw new Error('Erro ao buscar os dados do perfil');
+      console.error({ error });
+      throw new Error('Erro ao buscar dados do perfil');
     }
   }
 }
