@@ -1,6 +1,5 @@
-import githubAPI from '../services/githubAPI';
-import { IRepo } from '../models/IRepos';
-import { IUser } from '../models/IUser';
+import { githubAPI } from './github_api';
+import { IRepo, IUser } from './interfaces';
 
 class GithubController {
   async getRepositories ({ username = 'rbmelolima' }): Promise<IRepo[]> {

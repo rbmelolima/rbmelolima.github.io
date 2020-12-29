@@ -1,17 +1,16 @@
 import React from 'react';
-import { IRepo } from '../../../models/IRepos';
 import { FaGithub, FaCode, FaLink } from 'react-icons/fa';
+import { IRepo } from '../../../entity/github';
 import './styles.css';
-
 interface CardProjectProps {
   data: IRepo;
 }
 
-export default function CardProject(props: CardProjectProps) {
+export default function CardProject (props: CardProjectProps) {
   const { description, homepage, html_url, language, name } = props.data;
 
-  function renderHomepageLink() {
-    if(homepage !== '' && homepage !== null) {
+  function renderHomepageLink () {
+    if (homepage !== '' && homepage !== null) {
       return (
         <a href={ homepage } target="_blank" rel="noopener noreferrer">
           <FaLink size={ 24 } />

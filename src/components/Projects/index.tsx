@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { IRepo } from '../../models/IRepos';
-import githubAPI from '../../services/githubAPI';
+import { IRepo } from '../../entity/github';
+import { githubAPI } from '../../entity/github/github_api';
 import CardProject from './CardProject';
 import './styles.css';
 
-export default function Projects() {
+export default function Projects () {
   const [ repos, setrepos ] = useState<Array<IRepo>>();
 
   useEffect(() => {
-    async function getData() {
+    async function getData () {
       try {
         const response = await githubAPI.get<Array<IRepo>>('users/rbmelolima/repos?per_page=100');
         const { data } = response;
         setrepos(data);
 
-      } catch(error) {
+      } catch (error) {
         //Tratar o erro
       }
     }

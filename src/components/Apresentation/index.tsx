@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { IUser } from '../../models/IUser';
-import githubAPI from '../../services/githubAPI';
+import { IUser } from '../../entity/github/interfaces/IUser';
+import { githubAPI } from '../../entity/github/github_api';
 import { FaGithub, FaLinkedin, FaMediumM, FaGoogle, FaWhatsapp } from 'react-icons/fa';
 import './styles.css';
 
