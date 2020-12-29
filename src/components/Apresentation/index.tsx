@@ -1,35 +1,44 @@
 import React, { useEffect, useState } from 'react';
 import { IUser } from '../../entity/github/interfaces/IUser';
-import { githubAPI } from '../../entity/github/github_api';
 import { FaGithub, FaLinkedin, FaMediumM, FaGoogle, FaWhatsapp } from 'react-icons/fa';
+import { githubController } from '../../entity/github';
+import { ErrorBoundary } from '../ErrorBoundary';
+
 import './styles.css';
 
 export default function Apresentation (): JSX.Element {
   const [ user, setuser ] = useState<IUser>();
+  const [ error, setError ] = useState<boolean>(false);
+
+  async function handleUser () {
+    try {
+      const newUser = await githubController.profile();
+      setuser(newUser);
+    } catch (error) {
+      setError(true);
+    }
+  }
 
   useEffect(() => {
-    async function getData () {
-      try {
-        const response = await githubAPI.get<IUser>('users/rbmelolima');
-        const { data } = response;
-        setuser(data);
-
-      } catch (error) {
-        //Tratar o erro
-      }
-    }
-    getData();
+    handleUser();
   }, []);
-
 
   return (
     <section id="apresentation">
       <div className="content">
-        <img src={ user?.avatar_url } alt="Foto - Roger Bernardo de Melo Lima" />
+        <ErrorBoundary error={ error }>
+          <img
+            src={ user?.avatar_url }
+            alt="Foto - Roger Bernardo de Melo Lima"
+          />
+        </ErrorBoundary>
 
         <h1>Roger Bernardo de Melo Lima</h1>
-        <p>{ user?.location }</p>
-        <p>{ `@${user?.login}` }</p>
+
+        <ErrorBoundary error={ error }>
+          <p>{ user?.location }</p>
+          <p>{ `@${user?.login}` }</p>
+        </ErrorBoundary>
 
         <div className="contato icons-group">
           <a href="https://github.com/rbmelolima" target="blank" title="Visualizar Github">
@@ -55,7 +64,9 @@ export default function Apresentation (): JSX.Element {
           </a>
         </div>
 
-        <p>{ user?.bio }</p>
+        <ErrorBoundary error={ error }>
+          <p>{ user?.bio }</p>
+        </ErrorBoundary>
       </div>
     </section>
   );
